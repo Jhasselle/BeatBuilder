@@ -14,6 +14,9 @@
 		63042164222208DA0008529C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63042162222208DA0008529C /* LaunchScreen.storyboard */; };
 		6304216F222208DA0008529C /* mMeterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6304216E222208DA0008529C /* mMeterTests.swift */; };
 		6304217A222208DA0008529C /* mMeterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63042179222208DA0008529C /* mMeterUITests.swift */; };
+		630421CC222218A10008529C /* TrackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630421CB222218A10008529C /* TrackManager.swift */; };
+		635F18FE2234975800D7FC9C /* Audio in Resources */ = {isa = PBXBuildFile; fileRef = 635F18FD2234975700D7FC9C /* Audio */; };
+		635F19002235887F00D7FC9C /* GSAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635F18FF2235887F00D7FC9C /* GSAudio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		63042175222208DA0008529C /* mMeterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mMeterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63042179222208DA0008529C /* mMeterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mMeterUITests.swift; sourceTree = "<group>"; };
 		6304217B222208DA0008529C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		630421CB222218A10008529C /* TrackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackManager.swift; sourceTree = "<group>"; };
+		635F18FD2234975700D7FC9C /* Audio */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Audio; sourceTree = "<group>"; };
+		635F18FF2235887F00D7FC9C /* GSAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSAudio.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +103,11 @@
 		63042158222208D50008529C /* mMeter */ = {
 			isa = PBXGroup;
 			children = (
+				635F18FD2234975700D7FC9C /* Audio */,
 				63042159222208D60008529C /* AppDelegate.swift */,
 				6304215B222208D60008529C /* ViewController.swift */,
+				630421CB222218A10008529C /* TrackManager.swift */,
+				635F18FF2235887F00D7FC9C /* GSAudio.swift */,
 				6304215D222208D60008529C /* Main.storyboard */,
 				63042160222208DA0008529C /* Assets.xcassets */,
 				63042162222208DA0008529C /* LaunchScreen.storyboard */,
@@ -187,6 +196,9 @@
 		6304214E222208D50008529C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					666,
+				);
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Ellessah;
@@ -232,6 +244,7 @@
 				63042164222208DA0008529C /* LaunchScreen.storyboard in Resources */,
 				63042161222208DA0008529C /* Assets.xcassets in Resources */,
 				6304215F222208D60008529C /* Main.storyboard in Resources */,
+				635F18FE2234975800D7FC9C /* Audio in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				635F19002235887F00D7FC9C /* GSAudio.swift in Sources */,
 				6304215C222208D60008529C /* ViewController.swift in Sources */,
 				6304215A222208D60008529C /* AppDelegate.swift in Sources */,
+				630421CC222218A10008529C /* TrackManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
