@@ -5,7 +5,7 @@
 //  Created by CampusUser on 2/23/19.
 //  Copyright © 2019 Ellessah. All rights reserved.
 
-import Foundation
+
 import AVFoundation
 import UIKit
 
@@ -59,7 +59,7 @@ class ViewController: UIViewController {
         buttonChecker = Array(repeating: Array(repeating: 0, count: 32), count: 5)
         trackManager = TrackManager()
         bpmText.text = "120"
-        titleLabel.text = "BeatBuilder v1.0"
+        titleLabel.text = "BeatBuilder v1.1"
         audioSliderDefaultPosition = parentTrackView.bounds
         audioSliderImage.center.x = audioSliderDefaultPosition.minX
     }

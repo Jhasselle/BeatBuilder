@@ -21,8 +21,7 @@ class GSAudio: NSObject, AVAudioPlayerDelegate {
     
     func playSound (_ soundFileName: String){
         
-        let soundFileNameURL = NSURL(fileURLWithPath: Bundle.main.path(forResource: soundFileName, ofType: "wav", inDirectory:"Audio")!)
-        
+        let soundFileNameURL = NSURL(fileURLWithPath: Bundle.main.path(forResource: soundFileName, ofType: "wav", inDirectory: "Audio")!)
         if let player = players[soundFileNameURL] { //player for sound has been found
             
             if player.isPlaying == false { //player is not in use, so use that one
